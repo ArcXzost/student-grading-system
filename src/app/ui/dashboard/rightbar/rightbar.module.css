@@ -1,0 +1,79 @@
+.container{
+    position: fixed;
+}   
+/* linear-gradient(to top, #182237, #253352); */
+.item{
+    background-color: var(--gradient);
+    position: relative;
+    padding: 20px;
+    padding-right: 40px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.bgContainer{
+    position: absolute;
+    bottom:0;
+    right:0;
+    width:50%;
+    height:50%;
+}
+
+.calendar{
+    border-radius: 20px;
+    background-color: var(--bgSoft); 
+    border: none;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.bg{
+    object-fit: contain;
+    opacity: 0.2;
+}
+
+.texts{
+    background-color: linear-gradient(to top, #182237, #253352);
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.notification{
+    font-weight: bold;
+}
+
+.title{
+    font-weight: 500;
+    font-size: 18px;
+    color: white;
+}
+
+.subtitle{
+    font-size: 15px;
+    color: var(--textSoft);
+}
+
+.description{
+    font-size: 13px;
+    color: var(--textSoft);
+    padding-right: 20px;
+}
+
+.button{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #5d57c9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: max-content;
+    /* reduces the size */
+}
+
+.button:hover{
+    background-color: #4f4aa2;
+}

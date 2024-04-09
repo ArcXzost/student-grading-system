@@ -1,0 +1,38 @@
+.container{
+    background-color: var(--bgSoft);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.container:hover{
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    background-color: #2e374a;
+}
+
+.texts{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.title{
+    font-size: 1.5rem;
+    font-weight: 600;
+
+}
+
+.value{
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.details{
+    font-size: 1rem;
+    font-weight: 400;
+    color: green
+}
+
+
