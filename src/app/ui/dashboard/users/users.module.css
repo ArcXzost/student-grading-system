@@ -61,7 +61,15 @@
     background-color: teal;
 }
 
+.edit:hover{
+    background-color: #054b43;
+}
+
 .delete{
     background-color: crimson;
+}
+
+.delete:hover{
+    background-color: #6c1414;
 }
 
