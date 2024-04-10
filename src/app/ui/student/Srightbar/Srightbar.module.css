@@ -1,0 +1,40 @@
+.container{
+    background-color: var(--bgSoft);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    margin-top: 75px;
+}
+
+
+
+.todo input{
+    padding: 10px;
+    width: 100%;
+    border: white;
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: var(--bg);
+    margin-bottom: 20px;
+}
+
+.todo button{
+    padding: 10px;
+    width: 100%;
+    border: white;
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: #0a4686;
+    color: white;
+    cursor: pointer;
+}
+
+.todo button:hover{
+    background-color: #4188d5;
+}
+
+.list{
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}

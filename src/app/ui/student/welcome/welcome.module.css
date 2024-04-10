@@ -1,0 +1,46 @@
+.fondamentoregular {
+    font-family: "Fondamento", cursive;
+    font-weight: 400;
+    font-style: italic;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bgSoft);
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 20px;
+    gap: 40px;
+}
+
+.container h1 {
+    color: var(--textColor);
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.container p {
+    color: var(--textColor);
+    font-size: 1rem;
+    font-weight: 300;
+    margin-top: 10px;
+    font-family: "Fondamento", cursive;
+    font-weight: 400;
+}
+
+.date {
+    color: var(--textColor);
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 70px;
+    font-family: "Fondamento", cursive;
+    font-weight: 400;
+}
+
+.image{
+    border: none;
+    margin-left: 40px;
+}

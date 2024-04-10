@@ -5,7 +5,7 @@ import {useSpring, animated} from 'react-spring';
 
 
 
-const card = (props) => {
+const card = (props, {item}) => {
   function Number({n}){
     const {number} = useSpring({
       from: {number: 0},
@@ -22,7 +22,7 @@ const card = (props) => {
         <span className={styles.title}>{props.title}</span>
         <span className={styles.value}>
           <Number n={props.value} />
-          +
+          {item}
         </span>
         <span className={styles.details}>
           <span>{props.details}</span>

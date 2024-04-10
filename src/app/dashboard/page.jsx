@@ -46,6 +46,7 @@ const dashboard = () => {
             value = {data[0].value}
             details = {data[0].details}
             icon = {data[0].icon}
+            item = "+"
           />
           <Card 
             id = {2}
@@ -53,6 +54,7 @@ const dashboard = () => {
             value = {data[1].value}
             details = {data[1].details}
             icon = {data[1].icon}
+            item = "+"
           />
           <Card 
             id = {3}
@@ -60,6 +62,7 @@ const dashboard = () => {
             value = {data[2].value}
             details = {data[2].details}
             icon = {data[2].icon}
+            item = "+"
           />
         </div>
         <Actions />

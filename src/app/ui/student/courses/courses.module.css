@@ -1,0 +1,40 @@
+.container {
+    background-color: var(--bgSoft);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.courses {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    font-weight: 500;
+    color: hsl(from var(--textSoft) 0.2 to var(--textSoft) 0.8);
+}
+
+.courses:hover {
+    background-color: teal;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.line {
+    height: 5px;
+    width: 100%;
+}
+
+.gradeAA {
+    background-color: green;
+    /* Example color for grade AA */
+}
+
+.gradeAB {
+    background-color: yellow;
+    /* Example color for grade AB */
+}
+
+.gradeBB {
+    background-color: orange;
+    /* Example color for grade BB */
+}

@@ -10,40 +10,40 @@ import { faUser, faHouse, faList, faRightFromBracket } from "@fortawesome/free-s
 
 const Layout = ({ children }) => {
     return (
-        <div className = {styles.container}>
-            <div className = {styles.menu}>
-                <Sidebar menuItems={menuItemsAdmin} Name = "Vinay Thakur" Role = "Admin"/>
+        <div className={styles.container}>
+            <div className={styles.menu}>
+                <Sidebar menuItems={menuItemsStudent} Name = "Ashutosh Pandey" Role = "2101046" />
             </div>
-            <div className = {styles.content}>
+            <div className={styles.content}>
                 <Navbar />
                 {children}
                 <Footer />
-            </div>           
+            </div>
         </div>
     );
 };
 
 export default Layout;
 
-const menuItemsAdmin = [
+const menuItemsStudent = [
     {
         title: "Pages",
         list: [
             {
                 title: "Dashboard",
-                path: "/dashboard",
+                path: "/student",
                 icon: <FontAwesomeIcon icon={faHouse} className="fas fa-house" style={{ color: "grey" }}
                 />
             },
             {
-                title: "Result",
-                path: "/dashboard/users",
+                title: "Results",
+                path: "/student/result/test",
                 icon: <FontAwesomeIcon icon={faUser} className="fas fa-user" style={{ color: "grey" }}
                 />
             },
             {
                 title: "Details",
-                path: "/dashboard/Details",
+                path: "/student",
                 icon: <FontAwesomeIcon icon={faList} className="fas fa-list" style={{ color: "grey" }}
                 />
             }
@@ -55,17 +55,17 @@ const menuItemsAdmin = [
         list: [
             {
                 title: "Dashboard",
-                path: "/dashboard",
+                path: "/",
                 icon: <FontAwesomeIcon icon={faHouse} className="fas fa-house" style={{ color: "grey" }} />
             },
             {
                 title: "Users",
-                path: "/dashboard/users",
+                path: "/",
                 icon: <FontAwesomeIcon icon={faHouse} className="fas fa-house" style={{ color: "grey" }} />
             },
             {
                 title: "Details",
-                path: "/dashboard/Details",
+                path: "/",
                 icon: <FontAwesomeIcon icon={faHouse} className="fas fa-house" style={{ color: "grey" }} />
             }
         ]
@@ -76,17 +76,17 @@ const menuItemsAdmin = [
         list: [
             {
                 title: "Dashboard",
-                path: "/dashboard",
+                path: "/",
                 icon: <FontAwesomeIcon icon={faHouse} className="fas fa-house" style={{ color: "grey" }} />
             },
             {
                 title: "Users",
-                path: "/dashboard/users",
+                path: "/",
                 icon: <FontAwesomeIcon icon={faHouse} className="fas fa-house" style={{ color: "grey" }} />
             },
             {
                 title: "Details",
-                path: "/dashboard/Details",
+                path: "/",
                 icon: <FontAwesomeIcon icon={faHouse} className="fas fa-house" style={{ color: "grey" }} />
             }
         ]
