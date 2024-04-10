@@ -21,29 +21,40 @@
 
 .file {
     color: var(--textSoft);
+    background-color: var(--bg);
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.file::-webkit-file-upload-button{
+    background-color: #1b2353;
+    color: var(--textSoft);
+    border: none;
+    border-radius: 5px;
 }
 
 .actions {
-    width: 100%;
+    
 }
 
 .addBatch,
 .addGrades,
 .updateDetails {
     display: flex;
-    flex: 4;
+    gap: 10px;
 }
 
 .output {
     margin-top: 80px;
-    height: 100px;
-    margin-left: 20px;
-    flex-direction: row;
-    flex: 1;
+    height: fill-available;
     background-color: var(--bg);
     border-radius: 10px;
     padding: 10px;
     color: green;
+    align-items: center;
 }
 
 

@@ -20,16 +20,16 @@ const actions = () => {
 
                             <input name="course" type="text" placeholder='Enter Course Name' className={styles.input} />
 
-                            <p className={styles.p}>1st semester</p>
+                            {/* <p className={styles.p}>1st semester</p> */}
 
-                            <input name="File" type="file" accept=".xlsx .csv" placeholder='Upload the file' className={styles.input + ' ' + styles.file} id="actualbtn" />
+                            <input name="File" type="file" accept=".xlsx .csv" placeholder='Upload the file' className={styles.file} id="actualbtn" />
                             {/* <label for="actualbtn" className={styles.label}>Choose File</label> */}
                             <div>
-                                <button type="submit" className={styles.button} >Add new Batch</button>
+                                <button type="submit" className={styles.button} >Add</button>
                             </div>
                         </div>
                     </form>
-                    <div className={styles.output}>Successfull! A new batch has been added and new tables have been created for the next semester.</div>
+                    <div className={styles.output}> Successfull!</div>
                 </div>
                 <div className={styles.addGrades}>
                     <form action="">
@@ -47,10 +47,10 @@ const actions = () => {
 
                             <input type="text" placeholder='Enter Subject' className={styles.input} />
 
-                            <input name="File" type="file" accept=".xlsx .csv" placeholder='Upload the file' className={styles.input + ' ' + styles.file} id='actualbtn' />
+                            <input name="File" type="file" accept=".xlsx .csv" placeholder='Upload the file' className={styles.file} id='actualbtn' />
                             {/* <label for="actualbtn" className={styles.label}>Choose File</label> */}
                             <div>
-                                <button className={styles.button}>Enter Grades</button>
+                                <button type="submit" className={styles.button}>Enter Grades</button>
                             </div>
                         </div>
                     </form>
@@ -71,7 +71,7 @@ const actions = () => {
                             <input type="text" placeholder='Correct Branch' className={styles.input} />
 
                             <div>
-                                <button className={styles.button}>Update Details</button>
+                                <button type="submit" className={styles.button}>Update Details</button>
                             </div>
                         </div>
                     </form>
@@ -94,7 +94,7 @@ const actions = () => {
 
                             <input type="Address" placeholder='Correct Address' className={styles.input} />
                             <div>
-                                <button className={styles.button}>Update Details</button>
+                                <button type="submit" className={styles.button}>Update Details</button>
                             </div>
                         </div>
                     </form>
