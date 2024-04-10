@@ -45,6 +45,8 @@ const actions = () => {
 
                             <input type="text" placeholder='Enter Semester' className={styles.input} />
 
+                            <input type="text" placeholder='Enter Subject' className={styles.input} />
+
                             <input name="File" type="file" accept=".xlsx .csv" placeholder='Upload the file' className={styles.input + ' ' + styles.file} id='actualbtn' />
                             {/* <label for="actualbtn" className={styles.label}>Choose File</label> */}
                             <div>
