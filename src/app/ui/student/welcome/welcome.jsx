@@ -7,13 +7,13 @@ var currentDate = new Date();
 var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
 var formattedDate = currentDate.toLocaleDateString('en-US', options);
 
-const Welcome = () => {
+const Welcome = (props) => {
     return (
         <div className={styles.container}>
             <div className={styles.intro}>
                 <div className={styles.date}>{formattedDate}</div>
                 <div className={styles.welcome}>
-                    <h1 className={styles.fondamentoregular}>Welcome back ASHUTOSH</h1>
+                    <h1 className={styles.fondamentoregular}>Welcome back {props.name}</h1>
                     <p>Always Stay Updated in your student portal!</p>
                 </div>
             </div>

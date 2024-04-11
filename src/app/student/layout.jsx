@@ -7,19 +7,22 @@ import { config } from "@fortawesome/fontawesome-svg-core";
 config.autoAddCss = false;
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faHouse, faList, faRightFromBracket } from "@fortawesome/free-solid-svg-icons";
+import AuthProvider from "../context/AuthProvider";
 
 const Layout = ({ children }) => {
     return (
-        <div className={styles.container}>
-            <div className={styles.menu}>
-                <Sidebar menuItems={menuItemsStudent} Name = "Ashutosh Pandey" Role = "2101046" />
+        <AuthProvider>
+            <div className={styles.container}>
+                <div className={styles.menu}>
+                    <Sidebar menuItems={menuItemsStudent} Name="Ashutosh Pandey" Role="2101046" />
+                </div>
+                <div className={styles.content}>
+                    <Navbar />
+                    {children}
+                    <Footer />
+                </div>
             </div>
-            <div className={styles.content}>
-                <Navbar />
-                {children}
-                <Footer />
-            </div>
-        </div>
+        </AuthProvider>
     );
 };
 

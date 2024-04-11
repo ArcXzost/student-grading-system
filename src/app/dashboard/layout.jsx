@@ -7,9 +7,11 @@ import { config } from "@fortawesome/fontawesome-svg-core";
 config.autoAddCss = false;
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faHouse, faList, faRightFromBracket } from "@fortawesome/free-solid-svg-icons";
+import AuthProvider from "../context/AuthProvider";
 
 const Layout = ({ children }) => {
     return (
+        <AuthProvider>
         <div className = {styles.container}>
             <div className = {styles.menu}>
                 <Sidebar menuItems={menuItemsAdmin} Name = "Vinay Thakur" Role = "Admin"/>
@@ -20,6 +22,7 @@ const Layout = ({ children }) => {
                 <Footer />
             </div>           
         </div>
+        </AuthProvider>
     );
 };
 
@@ -36,7 +39,7 @@ const menuItemsAdmin = [
                 />
             },
             {
-                title: "Result",
+                title: "Users",
                 path: "/dashboard/users",
                 icon: <FontAwesomeIcon icon={faUser} className="fas fa-user" style={{ color: "grey" }}
                 />

@@ -6,13 +6,33 @@ import Course from '../ui/student/courses/courses.jsx'
 import Graph from '../ui/student/analytics/graph.jsx'
 import Srightbar from '../ui/student/Srightbar/Srightbar.jsx'
 import Chart from '../ui/dashboard/chart/chart.jsx'
+import { options } from "../api/auth/[...nextauth]/options.js"
+import { getServerSession } from "next-auth/next"
+import { redirect } from "next/navigation"
 
-const page = () => {
+const page = async () => {
+    const session = await getServerSession(options)
+
+    if (!session) {
+        redirect('/api/auth/signin?callbackUrl=/student')
+    }
+
+    const user = session.user;
+    const name = user.name;
+    const roll = user.roll;
+
+    console.log(user);
+
+    if(roll === 2101001){
+        return <h1> INVALID user !</h1>
+    }
+
     return (
         <>
-            <Welcome />
+            {session ? (
+                <>
+            <Welcome name = {name}/>
             <div className={styles.container}>
-
                 <div className={styles.wrapper}>
                     <h2 className={styles.heading}>Finance</h2>
                     <div className={styles.card}>
@@ -94,7 +114,8 @@ const page = () => {
                 <div className={styles.rightbar}>
                     <Srightbar />
                 </div>
-            </div>
+            </div></>) 
+            : <h1>UNAUTHORIZED !!</h1> }
         </>
     )
 }

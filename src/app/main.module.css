@@ -1,0 +1,29 @@
+.container{
+    display: flex;
+    background-color: var(--bgSoft);
+    border-radius: 10px;    
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+}
+
+.container button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--bg);
+    color: var(--text);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+    height: 100px;
+    width: 300px;
+}
+
+.container button:hover{
+    background-color: teal;
+    color: var(--textSoft);
+}
