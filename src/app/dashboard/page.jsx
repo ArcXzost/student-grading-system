@@ -47,10 +47,11 @@ const dashboard = async () => {
   }
 
   const user = session.user
+  console.log(user.name)
   
   return (
     <>
-      {(session && user.roll === 2101001)?(
+      {(session && user.name == "admin")?(
       <div className={styles.wrapper} >
         <div className={styles.main}>
           <div className={styles.cards}>
@@ -86,7 +87,7 @@ const dashboard = async () => {
         <div className={styles.side}>
           <Rightbar />
         </div>
-      </div>): <h1>UNAUTHORIZED !!</h1>
+      </div>): redirect('/api/auth/signin?callbackUrl=/dashboard')
 }
     </>
   )

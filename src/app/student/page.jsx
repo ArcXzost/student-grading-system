@@ -18,15 +18,13 @@ const page = async () => {
     }
 
     const user = session.user;
-    const name = user.name;
-    const roll = user.roll;
-
-    console.log(user);
-
-    if(roll === 2101001){
-        return <h1> INVALID user !</h1>
+    if(user.name == "admin"){
+        redirect('/api/auth/signin?callbackUrl=/student')
     }
 
+    console.log(user);
+    const name = user.name;
+    
     return (
         <>
             {session ? (
